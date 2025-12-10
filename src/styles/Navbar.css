@@ -1,0 +1,170 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 50px;
+  background: white;
+  box-shadow: 0 0 25px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ===== LOGO SECTION ===== */
+.name-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.tagline-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #052193;
+  margin-left: 1px;
+  margin-top: 4px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 55px;
+}
+
+.name-line {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.abhyaas-text {
+  color: #052193;   /* Blue */
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.india-text {
+  color: #FF0A0A; /* India Red */
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ===== MENU LINKS ===== */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-top: 1%;
+}
+
+.nav-links li {
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #091b63;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #0a66c2;
+}
+
+/* ===== CONTACT BUTTON ===== */
+.contact-btn {
+  background: linear-gradient(180deg, #606CD8, #C31717);
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+}
+
+.contact-btn:hover::after {
+  left: 0;
+}
+
+.contact-btn:hover {
+  transform: scale(1.07);
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: #333;
+}
+
+/* ==============================
+      MOBILE RESPONSIVE 768px
+============================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: white;
+    width: 180px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo-img {
+    width: 42px;
+  }
+
+  .abhyaas-text,
+  .india-text {
+    font-size: 22px;
+  }
+
+  .nav-links li {
+    font-size: 20px;
+  }
+}

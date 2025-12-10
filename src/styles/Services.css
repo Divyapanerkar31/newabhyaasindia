@@ -1,0 +1,401 @@
+/* ====================== SERVICES ====================== */
+
+.services-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #FFF7F7;
+}
+
+.services-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 220px;
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #f91717, #1b2286);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 32px;
+  color: white;
+}
+
+.service-card h3 {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #e22626, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+/* ====================== WHY CHOOSE US ====================== */
+
+.why-section {
+  padding: 60px 80px;
+  background: #fdf5f5;
+}
+
+.why-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-line {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(180deg, #606CD8, #C31717);
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+}
+
+.why-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.why-text {
+  flex: 1;
+}
+
+.why-text p {
+  line-height: 26px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 300px;
+}
+
+.why-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.why-main-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ====================== DETAILED SERVICES ====================== */
+
+.detail-section {
+  background: #fdf5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.detail-card {
+  background: #ffffff;
+  padding: 20px 25px;
+  border: 1.5px solid #e8caca;
+  border-radius: 14px;
+  text-align: left;
+  position: relative;
+  height: 210px;
+}
+
+.detail-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #ED1C1C, #254CBF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.detail-card ul {
+  padding-left: 5px;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+.detail-card li {
+  list-style: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.detail-img {
+  width: 200px;
+  position: absolute;
+  right: 70px;
+  bottom: 80px;
+  top: 50px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ====================== PORTFOLIO ====================== */
+
+.portfolio-section {
+  background: #fdf5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.portfolio-card {
+  background: #fdf5f5;
+  padding: 1px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-img {
+  width: 50%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ====================== CONTACT ====================== */
+
+.contact-section {
+  background: #fdf5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.contact-details p {
+  font-size: 20px;
+  color: #000;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.contact-bt {
+  margin-top: 25px;
+  background: #3c4bff;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-bt:hover {
+  background: #2c38d8;
+  transform: translateY(-2px);
+}
+
+/* =====================================================================
+                      FULL RESPONSIVE CODE STARTS HERE
+===================================================================== */
+
+/* ------------ For screens below 1024px -------------- */
+@media (max-width: 1024px) {
+
+  .why-text p {
+    margin-left: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .detail-img {
+    width: 150px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .portfolio-grid {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-img {
+    width: 70%;
+  }
+}
+
+/* ------------ Tablet (768px) -------------- */
+@media (max-width: 768px) {
+
+  .why-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-container {
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 45%;
+  }
+
+  .detail-card {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .detail-img {
+    width: 130px;
+    right: 10px;
+  }
+
+  .portfolio-grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-img {
+    width: 80%;
+  }
+}
+
+/* ------------ Mobile (600px) -------------- */
+@media (max-width: 600px) {
+
+  .services-title,
+  .detail-title,
+  .portfolio-title,
+  .contact-title,
+  .why-title {
+    font-size: 26px;
+  }
+
+  .service-card {
+    width: 80%;
+  }
+
+  .detail-img {
+    display: none;
+  }
+
+  .why-text p {
+    font-size: 18px;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* ------------ Small Mobile (450px) -------------- */
+@media (max-width: 450px) {
+
+  .service-card {
+    width: 100%;
+  }
+
+  .detail-grid {
+    width: 100%;
+  }
+
+  .portfolio-grid {
+    width: 100%;
+  }
+
+  .why-main-img {
+    max-width: 300px;
+  }
+
+  .contact-bt {
+    padding: 10px 28px;
+    font-size: 18px;
+  }
+}
