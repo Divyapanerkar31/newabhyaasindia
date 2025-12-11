@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./servicess/Services";
-import CaseStudies from "./casestudies/CaseStudies";
-import BlogAccordion from "./blog/Blog";
+import Navbar from "./pages/Navbar";
+import Hero from "./pages/Hero";
+import Services from "./pages/Services";
+import CaseStudies from "./pages/CaseStudies";
+import BlogAccordion from "./pages/Blog";
 export default function App() {
   return (
     <BrowserRouter>
